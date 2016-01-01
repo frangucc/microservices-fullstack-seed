@@ -9,7 +9,8 @@
 - Have one server send some JSON through the docker container, the other right off the app server. Make the application server and the JSON server seperate. Put a store on both servers, whichever you choose.
 
 
-### STEP TWO - IMPLEMENT A CODE ARCHITECTURE via YO, Redux/React
+### STEP TWO - IMPLEMENT A CODE ARCHITECTURE via YO
+- I like Redux/React right now. But maybe you're still on FLUX or even Angular. Use YO to pick your poison.
 - Implement redux with the following tree structure: actions, components, constants, containers, reducers and store_enhancers (make strong argument for any others (ie. routes)): must use yeoman generators to build project folder structure as my front-end is opinionated. If you prefer another, you may choose from these following options: yo x, yo y, yo z (as long as your starter builds on the containers services, you're good)
 
 -- install redux-scaffold, redux-devtools, redux-log	
