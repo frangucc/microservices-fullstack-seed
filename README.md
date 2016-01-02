@@ -7,14 +7,14 @@
 
 --- ater some research and careful consideration I am going with Empire. Empire is a control layer on top of Amazon EC2 Container Service (ECS) that provides a Heroku like workflow. It conforms to a subset of the Heroku Platform API, which means you can use the same tools and processes that you use with Heroku, but with all the power of EC2 and Docker.
 
-[Empire Quickstart](http://empire.readthedocs.org/en/latest/)
-[Empire Github](https://github.com/remind101/empire)
-[12 Factor Theory](http://12factor.net/)
+No Ops Library | Links | Github | Status
+--- | --- | --- | ---
+Empire | [Empire Quickstart](http://empire.readthedocs.org/en/latest/) | [Empire Github](https://github.com/remind101/empire) | Testing
+12 Factor Theory | [12 Factor Theory](http://12factor.net/) | Evaluating
 
-No Ops Library | Links | Status
---- | --- | ---
-Empire | [Empire Quickstart](http://empire.readthedocs.org/en/latest/) | Complete
-12 Factor Theory | [12 Factor Theory](http://12factor.net/) | WIP
+###### Franchino on Empire
+
+[![Franchino explains empire](https://www.youtube.com/watch?v=pFC5Tp-QYjk)](http://www.youtube.com/watch?v=v=pFC5Tp-QYjk)
 
 ##### Dependencies to here
 + Amazon EC2 Container Service
