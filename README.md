@@ -9,16 +9,18 @@
 
 No Ops Library | Links | Github | Status
 --- | --- | --- | ---
-Empire | [Empire Quickstart](http://empire.readthedocs.org/en/latest/) | [Empire Github](https://github.com/remind101/empire) | Testing
-12 Factor Theory | [12 Factor Theory](http://12factor.net/) | Evaluating
+Empire | [Empire Quickstart](http://empire.readthedocs.org/en/latest/) | [Empire Github](https://github.com/remind101/empire) | Implementing
+12 Factor Theory | [12 Factor Theory](http://12factor.net/) | Irrelevant | Evaluating
 
-###### Franchino on Empire
+###### Franchino screencast explaining how to use Empire
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/pFC5Tp-QYjk/0.jpg)](http://www.youtube.com/watch?v=pFC5Tp-QYjk)
 
-##### Dependencies to here
-+ Amazon EC2 Container Service
-+ A PostgreSQL database. We use Amazon RDS
+Dependencies for Empire | Links |
+--- | --- | ---
+Amazon EC2 Container Service | [Amazon Explainer on ECS](http://aws.amazon.com/ecs/) |
+A PostgreSQL database. We use Amazon RDS | [RDS](http://aws.amazon.com/rds/postgresql/) |
+
 
 ``` Docker and git, npm commands to fire up the project ```
 
