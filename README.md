@@ -14,7 +14,7 @@ Empire | [Empire Quickstart](http://empire.readthedocs.org/en/latest/) | [Empire
 
 ###### Franchino on Empire
 
-[![IMAGE ALT TEXT HERE](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=&url=http%3A%2F%2Fblog.remind.com%2Fnew-name-same-mission%2F&psig=AFQjCNEOIQ2StNzf_VXM9oCgFiYFIMvDSQ&ust=1451859996761591)](http://www.youtube.com/watch?v=pFC5Tp-QYjk)
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/pFC5Tp-QYjk/0.jpg)](http://www.youtube.com/watch?v=pFC5Tp-QYjk)
 
 ##### Dependencies to here
 + Amazon EC2 Container Service
