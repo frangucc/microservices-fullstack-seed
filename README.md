@@ -2,7 +2,8 @@
 
 Complete E2E stack based on Docker+Git and the Microservices architecture. Begins with a fool-proof Docker install and NPM install to a full deployment with Empire. Code architecture is done with Redux, React with Go and Node for workers. Using Material-ui react components for the front end with some opinionated mircoframeworks and code patterns such as Immutable.js. All front-end JS written in ES6/Babel. 
 
-> [Grokking Demo App](http://3db5fb2b.ngrok.com) 
+> [Demo App](http://3db5fb2b.ngrok.com) 
+> Grokking from my machine Demo App TTFB super slow :p
 
 ### STEP ONE - ECS CONTAINERS, NO OPS & CONTINUOUS DELIVERY (12Factor stuff)
 - Use docker to establish a GO continuous delivery server based on Thoughtworks https://github.com/gocd/gocd-docker or better, decide on whether or not to use CircleCI or Codeship, choose one (but describe why we want this).
