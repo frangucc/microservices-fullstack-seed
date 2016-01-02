@@ -11,6 +11,10 @@
 [Empire Github](https://github.com/remind101/empire)
 [12 Factor Theory](http://12factor.net/)
 
+No Ops Library | Links | Status
+--- | --- | ---
+Empire | [Empire Quickstart](http://empire.readthedocs.org/en/latest/) | Complete
+12 Factor Theory | [12 Factor Theory](http://12factor.net/) | WIP
 
 ##### Dependencies to here
 + Amazon EC2 Container Service
