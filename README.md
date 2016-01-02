@@ -14,7 +14,7 @@ Empire | [Empire Quickstart](http://empire.readthedocs.org/en/latest/) | [Empire
 
 ###### Franchino on Empire
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/pFC5Tp-QYjk" frameborder="0" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ##### Dependencies to here
 + Amazon EC2 Container Service
