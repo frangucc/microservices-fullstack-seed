@@ -5,6 +5,15 @@
 ### STEP ONE - ECS CONTAINERS, NO OPS & CONTINUOUS DELIVERY (12Factor stuff)
 - Use docker to establish a GO continuous delivery server based on Thoughtworks https://github.com/gocd/gocd-docker or better, decide on whether or not to use CircleCI or Codeship, choose one (but describe why we want this).
 
+--- ater some research and careful consideration I am going with Empire. Empire is a control layer on top of Amazon EC2 Container Service (ECS) that provides a Heroku like workflow. It conforms to a subset of the Heroku Platform API, which means you can use the same tools and processes that you use with Heroku, but with all the power of EC2 and Docker.
+
+[Empire quickstart](http://empire.readthedocs.org/en/latest/)
+[Empire github](https://github.com/remind101/empire)
+
+##### Dependencies to here
++ Amazon EC2 Container Service
++ A PostgreSQL database. We use Amazon RDS
+
 ``` Docker and git, npm commands to fire up the project ```
 
 - Toss in two servers and default one to GO for our web-app. Have Node in there just because we may use it later, there's good stuff ready to go for Node we may use later. Be sure they're on socket.io or better (if even necessary with GOLANG)
@@ -49,5 +58,8 @@ https://github.com/gaearon/redux-devtools - redux logger
 - Figure how how https://github.com/andrewngu/sound-redux is serving mobile vs desktop
 
 ``` Run the dev tools ```
+
+### STEP FIVE
+- Bring in Phant and AWS IoT because the fuck I said so
 
 
