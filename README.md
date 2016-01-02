@@ -22,12 +22,16 @@ Amazon EC2 Container Service | [Amazon Explainer on ECS](http://aws.amazon.com/e
 A PostgreSQL database. We use Amazon RDS | [RDS](http://aws.amazon.com/rds/postgresql/) |
 
 
-``` Docker and git, npm commands to fire up the project ```
+``` ACTIONS: Run Empire and let it set everything up using Docker and ECS. Be live in the cloud and deploying like a boss. Establish key commands for destorying, booting and hosting and restarting. ```
+
+
+> In terms of application servers and general workers, do the following:
 
 - Toss in two servers and default one to GO for our web-app. Have Node in there just because we may use it later, there's good stuff ready to go for Node we may use later. Be sure they're on socket.io or better (if even necessary with GOLANG)
 - Have one server send some JSON through the docker container, the other right off the app server. Make the application server and the JSON server seperate. Put a store on both servers, whichever you choose.
 
-``` fire up the servers and test them, be sure they're running, open them in the browser with bash ```
+
+``` ACTION: fire up the servers and test them, be sure they're running, open them in the browser with bash ```
 
 
 ### STEP TWO - IMPLEMENT A CODE ARCHITECTURE via YO
