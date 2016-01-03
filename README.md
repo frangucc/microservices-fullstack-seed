@@ -56,8 +56,12 @@ A PostgreSQL database. We use Amazon RDS | [RDS](http://aws.amazon.com/rds/postg
 
 > If someone maintains a better yo scaffold for getting started us it not mine.
 
-[Yeoman Redux-React-Webpack](https://github.com/newtriks/generator-react-webpack)
+[Yo generator-react-webpack-redux](https://github.com/stylesuxx/generator-react-webpack-redux)
 
+``` npm install yo ```
+``` npm install -g generator-react-webpack-redux ```
+
+> See generator commands [Yo generator-react-webpack-redux](https://github.com/stylesuxx/generator-react-webpack-redux)
 
 - Use npm start, gulp and/or webpack with support for ES6, lint, babel and hotloader
 
