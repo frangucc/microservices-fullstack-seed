@@ -1,6 +1,6 @@
 # microservices-fullstack-seed
 
-Complete E2E stack based on Docker+Git and the Microservices architecture. Begins with a fool-proof Docker install and NPM install to a full deployment with Empire. Code architecture is done with Redux, React with Go and Node for workers. Using Material-ui react components for the front end with some opinionated mircoframeworks and code patterns such as Immutable.js. All front-end JS written in ES6/Babel. 
+Complete (work in progress) E2E stack based on Docker+Git and the Microservices architecture. Begins with a fool-proof Docker install and NPM install to a full deployment with Empire. Code architecture is done with Redux, React with Go and Node for workers. Using Material-ui react components for the front end with some opinionated mircoframeworks and code patterns such as Immutable.js. All front-end JS written in ES6/Babel. 
 
 > [Demo App](http://3db5fb2b.ngrok.com) 
 > Grokking from my machine Demo App TTFB super slow :p
@@ -44,6 +44,20 @@ A PostgreSQL database. We use Amazon RDS | [RDS](http://aws.amazon.com/rds/postg
 -- install redux-scaffold, redux-devtools, redux-log and id any others
 
 ``` scaffolding commands go here ```
+
+> GETTING STARTED
+
+``` git clone git@github.com:frangucc/microservices-fullstack-seed.git ```
+
+``` npm install ```
+``` yo redux-react // scaffold out sound-redux ```
+``` bower install // install any js dependencies ```
+``` npm start // fire up localservers ```
+
+> If someone maintains a better yo scaffold for getting started us it not mine.
+
+[Yeoman Redux-React-Webpack](https://github.com/newtriks/generator-react-webpack)
+
 
 - Use npm start, gulp and/or webpack with support for ES6, lint, babel and hotloader
 
