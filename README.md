@@ -1,8 +1,12 @@
 # microservices-fullstack-seed
 
+A place to start tinkering when migrating to Redux-React.
+
+> Contact <franchino@problemspaces.com> for expert advice if your team wants to bite this bullet. Tweet at me if you got beef [@franchescino](https://twitter.com/franchescino).
+
 ### PROJECT GOALS
 
-Create an E2E starter with a no ops environment based on Docker+Git and the microservices+containers architecture. Begin setup of this repository with a fool-proof Docker and NPM install and finish with a complete deployment worfklfow of all containers using Empire.
+Create an E2E starter with a no ops environment based on Docker+Git and the Microservices+Containers architecture. Begin setup of this repository with a fool-proof Docker and NPM install and finish with a complete deployment worfklfow of all containers using Empire.
 
 > ESSAY: Designing a docker architecture for a Redux app
 
@@ -95,16 +99,16 @@ Redux Thunk | [Github](https://github.com/gaearon/redux-thunk)
 - Make building the local environment super easy and implement hotloading with linting
 
 ### PART THREE - MAKE AN APP (OR STEAL ONE MUAHAHAHAHAAHAHA)
-+ Reverse engineer the sound-redux app because that's what a real hacker would do. Build functionality into it. Currentl, I have noticed that this amazing app:
++ Reverse engineer the sound-redux app because that's what a real hacker would do. Build functionality into it. Currently, I have noticed that this amazing app:
 
-++ Doesn't allow you to share an individual track
-++ Doesn't allow you to manipulate the stores data
-++ Doesn't say Franchino anywhere when I send them this native feeling app in the browser
-++ Doesn't have an adserver displaying my recent Readme file updates
-++ Sound-Redux could use a couple pull requests from me. Will investigate whether I can wire the iOS player overlay can pass next to the Redux front end or if that's just not possible
-++ Sound-Redux could use a track overlay of sorts
-++ Sound-Redux could use a take_selfie button for every track
-++ Sound-Redux might like material-ui, it might not
+- Doesn't allow you to share an individual track
+- Doesn't allow you to manipulate the stores data
+- Doesn't say Franchino anywhere when I send them this native feeling app in the browser
+- Doesn't have an adserver displaying my recent Readme file updates
+- Sound-Redux could use a couple pull requests from me. Will investigate whether I can wire the iOS player overlay can pass next to the Redux front end or if that's just not possible
+- Sound-Redux could use a track overlay of sorts
+- Sound-Redux could use a take_selfie button for every track
+- Sound-Redux might like material-ui, it might not
 
 > ESSAY: The Future of the Mobile Web
 
