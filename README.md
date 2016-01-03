@@ -4,17 +4,26 @@
 
 Create an E2E starter with a no ops environment based on Docker+Git and the microservices+containers architecture. Begin setup of this repository with a fool-proof Docker and NPM install and finish with a complete deployment worfklfow of all containers using Empire.
 
+> ESSAY: Designing a docker architecture for a Redux app
+
 Code the main app architecture with Redux-React with Go & Node and socket based server workers. Use Yo to generate the project and webpack to build it.
+
+> ESSAY: Patterns for Redux
 
 Let the front-end implement something hot like the material-ui react component library and include some uses cases of some of the more opinionated mircoframeworks such as immutable.js. Write all JS in ES6/Babel.
 
-> [Demo App](http://3db5fb2b.ngrok.com) 
+> [Demo App - airing now](http://3db5fb2b.ngrok.com)
 > Grokking from my machine Demo App TTFB super slow :p
 
-### STEP ONE - ECS CONTAINERS, NO OPS & CONTINUOUS DELIVERY (12Factor stuff)
+### PART ONE - ECS CONTAINERS, NO OPS & CONTINUOUS DELIVERY (12Factor stuff)
+
 + GOAL: Use Docker to establish a GO continuous delivery server based on Thoughtworks https://github.com/gocd/gocd-docker or better, decide on whether or not to use CircleCI or Codeship, choose one (but describe why we want this).
 
+> ESSAY: Noops for Redux, Zero to One
+
 > After some research and careful consideration I am going with Empire. Empire is a control layer on top of Amazon EC2 Container Service (ECS) that provides a Heroku like workflow. It conforms to a subset of the Heroku Platform API, which means you can use the same tools and processes that you use with Heroku, but with all the power of EC2 and Docker.
+
+> ESSAY: Using Empire & EC2 in place of Heroku, but keep heroku CLI tools
 
 No Ops Library | Links | Github | Status
 --- | --- | --- | ---
@@ -33,26 +42,25 @@ A PostgreSQL database. We use Amazon RDS | [RDS](http://aws.amazon.com/rds/postg
 
 ``` ACTIONS: Run Empire and let it set everything up using Docker and ECS. Be live in the cloud and deploying like a boss. Establish key commands for destorying, booting and hosting and restarting. ```
 
++ In terms of application servers and general workers, do the following:
 
-> In terms of application servers and general workers, do the following:
-
-+ Toss in two servers and default one to GO for our web-app. Have Node in there just because we may use it later, there's good stuff ready to go for Node we may use later. Be sure they're on socket.io or better (if even necessary with GOLANG)
-+ Have one server send some JSON through the docker container, the other right off the app server. Make the application server and the JSON server seperate. Put a store on both servers, whichever you choose.
++ - Toss in two servers and default one to GO for our web-app. Have Node in there just because we may use it later, there's good stuff ready to go for Node we may use later. Be sure they're on socket.io or better (if even necessary with GOLANG)
++ - Have one server send some JSON through the docker container, the other right off the app server. Make the application server and the JSON server seperate. Put a store on both servers, whichever you choose.
 
 
 ``` ACTION: fire up the servers and test them, be sure they're running, open them in the browser with bash ```
 
 
-### STEP TWO - IMPLEMENT A CODE ARCHITECTURE via YO
+### PART TWO - IMPLEMENT A CODE ARCHITECTURE via YO
 + I like Redux/React right now. But maybe you're still on FLUX or even Angular or Backbone. We will use YO to pick your poison.
 
-> If you are serious about developing with React & Redux I suggest you read these two docs over any others:
+> ESSAY: Getting serious about redux. If you are serious about developing with React & Redux I suggest you read these two docs over any others:
 [Redux Docs](http://rackt.org/redux/)
 [React Docs](https://facebook.github.io/react/docs/getting-started.html)
 
 + Implement redux with the following tree structure: actions, components, constants, containers, reducers and store_enhancers (make strong argument for any others (ie. routes, assets)): use yeoman generators to build project folder structure as my front-end is opinionated. If you prefer another, you may choose from these following options: yo x, yo y, yo z (as long as your starter builds on the containers services, you're good)
 
-> NOTE: make use of redux-devtools, redux-log, thunk middleware, normalizr and identify any other best practices
+> ESSAY: make use of redux-devtools, redux-log, thunk middleware, normalizr with immutable.js and a pipeline data visualizer like Airflow
 
 Redux Import Libraries | Documentation |
 --- | --- | ---
@@ -86,34 +94,37 @@ Redux Thunk | [Github](https://github.com/gaearon/redux-thunk)
 
 - Make building the local environment super easy and implement hotloading with linting
 
-### STEP THREE - MAKE AN APP (OR STEAL ONE MUAHAHAHAHAAHAHA)
-- Recreate and enahnce the http://search.dronestre.am/ search UI by injesting the http://api.dronestre.am/data feed. Use material-ui react components to render my much sexier looking view.
+### PART THREE - MAKE AN APP (OR STEAL ONE MUAHAHAHAHAAHAHA)
++ Reverse engineer the sound-redux app because that's what a real hacker would do. Build functionality into it. Currentl, I have noticed that this amazing app:
 
-- Reverse engineer the sound-redux app because that's what a real hacker would do
+++ Doesn't allow you to share an individual track
+++ Doesn't allow you to manipulate the stores data
+++ Doesn't say Franchino anywhere when I send them this native feeling app in the browser
+++ Doesn't have an adserver displaying my recent Readme file updates
+++ Sound-Redux could use a couple pull requests from me. Will investigate whether I can wire the iOS player overlay can pass next to the Redux front end or if that's just not possible
+++ Sound-Redux could use a track overlay of sorts
+++ Sound-Redux could use a take_selfie button for every track
+++ Sound-Redux might like material-ui, it might not
 
---- Consider https://github.com/ipselon/material-ui-prepack on the UI
---- Use the scaffolding tool
+> ESSAY: The Future of the Mobile Web
 
-- Demonstrate a reducer on the http://api.dronestre.am/data service
+--- Consider https://github.com/ipselon/material-ui-prepack
 
-- Create a custom react component from hardly even bowered javascript library such as numbers.js or tangle.js. Use it to crunch the terrifying dronestrike data
+##### EXTRA CREDIT
 
-- Create a three.js or d3.js visualization component to visualize the drone strike data
+- Create a three.js or d3.js visualization component to visualize the music, might require a beast of a processor
 
 ``` Run the app in the browser ```
 
-### STEP FOUR
-- Write a mocha/chai test to test the action, reducer and a componenet responsible for the search and it's results
+### PART FOUR
 
-https://github.com/gaearon/redux-devtools - redux logger
++ Write a mocha/chai test to test the action, reducer and a componenet responsible for the search and it's results
 
-- Keep https://github.com/xgrommx/awesome-redux into perspective
+``` Run the dev tools, lint etc ```
 
-- Figure how how https://github.com/andrewngu/sound-redux is serving mobile vs desktop
+> ESSAY: Is testing an application that implements a REACT component library with single points of data access overkill? If not, what should we test?
 
-``` Run the dev tools ```
-
-### STEP FIVE
-- Bring in Phant and AWS IoT because the fuck I said so
+### PART FIVE
+- Bring in Phant and AWS IoT just because
 
 
